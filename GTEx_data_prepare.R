@@ -29,7 +29,7 @@ getBenchmark_data_noFilter <- function(countData, metaData, nrRepList, fracGenes
       
       localDesign <- data.frame(
         sample_id = localSubset,
-        condition <- c(rep("a", localSampleSize), rep("b", localSampleSize)),
+        condition = c(rep("a", localSampleSize), rep("b", localSampleSize)),
         stringsAsFactors = FALSE
       )
       localDesign <- localDesign[sort.list(localDesign$condition),]
